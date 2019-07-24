@@ -26,9 +26,9 @@ $( document ).ready(function() {
 	
 	function callMuseAPI(secret,type){
 		var randomWord ="" ;
-		let url = "https://api.datamuse.com/words?"+type+"="+secret;
+		let url = "https://cors-anywhere.herokuapp.com/https://api.datamuse.com/words?"+type+"="+secret;
 		count++;
-		$.ajax( {url:url, success:function( data ) {
+		$.ajax( {url:url, crossDomain:true, success:function( data ) {
   			if(data.length > 0){
 				random = generateRandomNumber(0,data.length-1);
 				randomWord = data[random].word;
