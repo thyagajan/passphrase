@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/pgen.css">
+    <title>Passphrase Generator!</title>
+  </head>
+  <body>
+  <header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-primary">About</h4>
+          <p class="text-secondary">Uses <a href="https://www.datamuse.com/api" class="text-white">third party API</a> to find the relative words which sounds similar or means similar or related to the word. Using javascript to generate the random number.Forming password with many random parameters.</p>
+		  
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-primary">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="mailto:thyagajan@gmail.com" class="text-white">Email me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <img src="https://img.icons8.com/nolan/64/000000/password.png">
+        <strong>PGen</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main role="main">
+
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading">Passphrase Generator</h1>
+      <p class="lead text-muted">Enter your secret word and generate a strong,Easy to Remember and hard to break passphrase.</p>
+      <p>
+	  	<form>
+  			<div class="form-group">
+    			<input type="text" class="form-control" id="secret-word" aria-describedby="help" placeholder="Your Secret Word">
+    			<small id="help" class="form-text text-muted">Enter some generic word Ex. Love, mobile, flower, Ocean etc. Avoid using your crush names :)</small>
+				<a href="#" id="generate" class="btn btn-primary my-2">Generate</a>
+  			</div>
+		</form>
+		<div id="results" class="results ">
+  			<ul id="resultList" class="list-group list-group-flush ">
+			</ul>
+  		</div>
+       
+      </p>
+    </div>
+  </section>
+  <section>
+  	<div class="row card-grid">
+	  <div class="col-sm-4">
+	    <div class="card">
+			<div class="card-header bg-secondary">
+    			 <h5 class="card-title text-white">Strong Password</h5>
+  			</div>
+	      <div class="card-body">
+	       	
+		  	<ul>
+			  	<li class="text-primary">minimum 15 chars.</li>
+				<li class="text-info">Upper case, lower Case and a number.</li>
+				<li class="text-muted">Special character with or without a space.</li>
+		  	</ul>
+	        
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col-sm-4">
+	    <div class="card">
+			<div class="card-header bg-secondary">
+    			 <h5 class="card-title text-white">Easy To Remember</h5>
+  			</div>
+	      <div class="card-body">
+	       
+	        
+			<ul>
+			  	<li class="text-muted">Associated with your favourite word</li>
+				<li class="text-primary">Mostly meaningful.</li>
+				<li class="text-info">Simple words and numbers.</li>
+		  	</ul>
+	      
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col-sm-4">
+	    <div class="card">
+			<div class="card-header bg-secondary">
+    			 <h5 class="card-title text-white">Hard to Break</h5>
+  			</div>
+	      <div class="card-body">
+	       
+	        
+			<ul>
+			  	<li class="text-info">Complies with most password standards</li>
+				<li class="text-muted">Completely random including position</li>
+				<li class="text-primary">Hard to guess...</li>
+		  	</ul>
+	        
+	      </div>
+	    </div>
+	  </div>
+	</div>
+  </section>
+  
+
+</main>
+
+<footer class="text-muted">
+  <div class="container">
+    <p class="float-right">
+      <a href="#">Back to top</a>
+    </p>
+    <p>We do not store any of the information entered or generated!</p>
+    <p>Passwords generated are just a guideline and feel free to modify it to suit your needs</p>
+  </div>
+</footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="js/pgen.js"></script>
+  </body>
+</html>
