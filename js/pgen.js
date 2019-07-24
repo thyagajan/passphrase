@@ -28,7 +28,7 @@ $( document ).ready(function() {
 		var randomWord ="" ;
 		let url = "https://api.datamuse.com/words?"+type+"="+secret;
 		count++;
-		$.get( url, function( data ) {
+		$.ajax( {url:url, success:function( data ) {
   			if(data.length > 0){
 				random = generateRandomNumber(0,data.length-1);
 				randomWord = data[random].word;
@@ -47,7 +47,7 @@ $( document ).ready(function() {
 			if(count == 0){
 				CombineWords();
 			}
-		});
+		}});
 		return randomWord;
 	}
 	
