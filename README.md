@@ -52,6 +52,10 @@ When the user modifies a letter or two of their choice in the generated password
 Since the tool is built as a simple webpage.Whole files can be copied to desired destination
 and open index.html file to access it.
 
+#Demo
+Tool demo can be found at
+https://pages.github.ibm.com/tnagaraj/passphrasegen
+
 
 
 
