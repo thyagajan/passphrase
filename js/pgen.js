@@ -7,13 +7,21 @@ $( document ).ready(function() {
 	var specialChars = ['!','@','#','$','&','*','%','-','_',' '];
 	var specialCodes = ['ml','sl','rel_jja','rel_jjb','rel_syn','rel_trg'];
 	$('#results').hide();
+	$('#loading').hide();
+	$('#generate').show();
 	
 	$('#generate').click(function()   {
 		passwordCounter = 5;
 		retryCount = 5;
 		$('#resultList').empty();
 		generatePassPhrase();
+		changeButtonState();
     });
+	
+	function changeButtonState(){
+		$('#generate').toggle();
+		$('#loading').toggle();
+	}
 	
 	function generatePassPhrase(){
 		let secretWord = $('#secret-word').val();
@@ -67,6 +75,9 @@ $( document ).ready(function() {
 		console.log(password);
 		if(passwordCounter > 0)
 			generatePassPhrase();
+		
+		if(passwordCounter == 0)
+			changeButtonState();
 		
 	}
 	
