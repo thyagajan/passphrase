@@ -1,10 +1,13 @@
 # passphrasegen
-A tool to generate a strong, easy to remeber and hard to break passphrase which complies with IBM new password policy.
+A tool to generate a strong, easy to remeber and hard to break passphrase which complies with most 
+of the standard password policies.
 
-Recently IBM has announced a new w3 passpord policy with minumum 15 characters and having 
-the mix of upper case, lower case, numbers and special characters.
 
-This tool is developed to help the people to generate a password which complies with IBM new password policy.
+#Demo
+Tool demo can be found at
+http://www.thyagajan.in/passphrase/
+
+This tool is developed to help the people to generate a password.
 
 #Technologies
 HTML
