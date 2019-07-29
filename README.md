@@ -54,7 +54,7 @@ and open index.html file to access it.
 
 #Demo
 Tool demo can be found at
-https://pages.github.ibm.com/tnagaraj/passphrasegen
+http://www.thyagajan.in/passphrase/
 
 
 
